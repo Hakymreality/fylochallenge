@@ -261,7 +261,11 @@ header>ul {
     .block {
         display: inline;
     }
-
+    @media(min-width:1024px){
+        #newsletter{
+            padding: 0.8em 5em;
+        }
+    }
     #newsletter {
         padding: 0.8em 8em;
         margin-right: 2em;
