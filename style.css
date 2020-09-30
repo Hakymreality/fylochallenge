@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --Dark-Blue: hsl(218, 28%, 13%);
+    --main-background: hsl(217, 28%, 15%);
+    --footer-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/*Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+p,
+a,
+li,
+#footer {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--main-background);
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+#logo-img {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 5em;
+}
+
+.nav-links {
+    margin: auto;
+    padding: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Landing Section */
+.landing {
+    margin: 2em 0.3em;
+    background-color: var(--Dark-Blue);
+}
+
+.landing-img {
+    margin: auto;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#landing-text {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#landing-text>p {
+    margin: 1em 0;
+    line-height: 25px;
+}
+
+.button {
+    padding: 0.8em 5em;
+    border-radius: 10px;
+    background: linear-gradient(35deg, var(--cyan), var(--blue));
+    border-radius: 30px;
+}
+
+/* Feature Section */
+.feature-card {
+    text-align: center;
+    margin: 4em;
+}
+
+/*Stay Productive */
+#productive-text {
+    text-align: left;
+    margin: 2em;
+    line-height: 2em;
+}
+
+#productive-link {
+    color: var(--cyan);
+}
+
+/*Testimonial Section */
+.testimonials {
+    background-image: url(./images/bg-quotes.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#spacer {
+    padding: 0.4em;
+}
+
+.card {
+    margin: 2em 1em;
+    padding: 2em;
+    background-color: var(--testimonials-background);
+    border-radius: 5px;
+}
+
+.person {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+.profile-img {
+    margin-right: 0.3em;
+    display: inline-flex;
+    width: 3.5em;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 10px;
+}
+
+/*CTA Section */
+#cta {
+    background-color: var(--Dark-Blue);
+    text-align: center;
+    padding: 2em;
+    border-radius: 2em;
+    margin: 0 1em -13em 0.7em;
+    box-shadow: 5px 5px 5px 5px var(--Dark-Blue);
+    z-index: 5;
+}
+
+#cta>h2 {
+    margin-bottom: 1em;
+}
+
+#cta>p {
+    line-height: 2em;
+}
+
+#newsletter {
+    padding: 0.8em 4em;
+    border-radius: 30px;
+    margin: 1em 0;
+}
+
+.block {
+    display: block;
+    text-decoration: none;
+}
+
+/* Footer Section */
+#footer {
+    position: relative;
+    padding: 17em 2em 2em 2em;
+    z-index: -3;
+    background-color: var(--footer-background);
+}
+
+#footer-logo {
+    display: block;
+    padding: 1em 0;
+}
+
+#left-footer {
+    max-width: 100px;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: flex-start;
+    margin: 0.8em;
+}
+
+.text-with-icon>p {
+    margin-left: 2em;
+}
+
+#right-footer {
+    display: flex;
+}
+
+#right-footer>ul {
+    list-style: none;
+    margin: 1.5em;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: inline-block;
+    width: 2em;
+    height: auto;
+}
+
+@media(min-width:1000px) {
+    header {
+        padding-top: 2em;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #stay-productive {
+        display: flex;
+        align-items: center;
+    }
+
+    .testimonials {
+        display: flex;
+        padding-bottom: 17em;
+    }
+
+    #cta {
+        padding: 4em;
+        border-radius: 2em;
+        margin: -13em 8em -13em 7.7em;
+        box-shadow: 5px 5px 5px 5px var(--Dark-Blue);
+        z-index: 5;
+    }
+
+    .block {
+        display: inline;
+    }
+
+    #newsletter {
+        padding: 0.8em 8em;
+        margin-right: 2em;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .social-footer {
+        display: flex;
+    }
+
+    .social-icons {
+        margin: 0.5em;
+    }
+}
